@@ -42,7 +42,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
 ENABLE_VIRTUAL_AB := true
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-# Dynam
+# Dynamic 
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # VNDK
@@ -65,13 +65,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     bootctl
-
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.rosemary
-
-# Copy the vibrator into recovery image
-PRODUCT_COPY_FILES += \
-	$(OUT_DIR)/target/product/rosemary/system/bin/hw/android.hardware.vibrator-service.rosemary:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hw/android.hardware.vibrator-service.rosemary
 
 # Fastbootd
 PRODUCT_PACKAGES += \

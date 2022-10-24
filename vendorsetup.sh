@@ -42,7 +42,7 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 	if [ "$1" = "$FDEVICE" ] || [  "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 		# Version / Maintainer infos
 		export OF_MAINTAINER="Kaiverse"
-		export FOX_VERSION=R11.3_A12
+		export FOX_VERSION=R12.1_1-Unofficial
 		export FOX_BUILD_TYPE="Beta"
 
 		# Device info
@@ -57,7 +57,6 @@ if [ -f "$(gettop)/bootable/recovery/orangefox.cpp" ]; then
 		export OF_DONT_PATCH_ON_FRESH_INSTALLATION=1
 		export OF_DONT_PATCH_ENCRYPTED_DEVICE=1
 		export OF_KEEP_DM_VERITY_FORCED_ENCRYPTION=1
-                # Don't try to decrypt A12
 		# export OF_SKIP_FBE_DECRYPTION_SDKVERSION=31
 		export OF_SKIP_DECRYPTED_ADOPTED_STORAGE=1
 
