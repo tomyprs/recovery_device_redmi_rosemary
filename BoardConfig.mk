@@ -105,7 +105,6 @@ AB_OTA_UPDATER := true
 # Workaround for copying error vendor files to recovery ramdisk
 TARGET_COPY_OUT_PRODUCT := product
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_COPY_OUT_SYSTEM_EXT = system_ext
 
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
@@ -140,7 +139,7 @@ TW_FRAMERATE := 60
 TW_SCREEN_BLANK_ON_BOOT := true
 
 # Haptic 
-#TW_NO_HAPTICS := true
+TW_NO_HAPTICS := true
 
 TW_EXCLUDE_DEFAULT_USB_INIT := true
 RECOVERY_SDCARD_ON_DATA := true
