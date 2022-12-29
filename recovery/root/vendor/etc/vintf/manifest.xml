@@ -293,10 +293,6 @@
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IFingerprintEngineering</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
             <name>IFingerprintNavigation</name>
             <instance>default</instance>
         </interface>
@@ -304,7 +300,6 @@
             <name>IFingerprintSensorTest</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.0::IFingerprintEngineering/default</fqname>
         <fqname>@1.0::IFingerprintNavigation/default</fqname>
         <fqname>@1.0::IFingerprintSensorTest/default</fqname>
     </hal>
@@ -641,10 +636,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IDisplayFeature/default</fqname>
-    </hal>
-    <hal format="aidl">
-        <name>android.hardware.vibrator</name>
-        <fqname>IVibrator/default</fqname>
     </hal>
     <sepolicy>
         <version>31.0</version>
